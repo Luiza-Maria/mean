@@ -1,0 +1,14 @@
+
+<app-navigation></app-navigation>
+<h1>Get  table:</h1>
+
+<div class="grid-container">
+    <div #numb class="grid-item" 
+    *ngFor="let table of nbTable;let i=index"
+    [ngClass] ="{red:table.active == false}"   
+     (click)="getTable($event)">
+        {{table.nb}}
+    </div> 
+     
+  </div>
+ 

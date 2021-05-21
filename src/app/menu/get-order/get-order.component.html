@@ -1,0 +1,40 @@
+
+<app-navigation></app-navigation>
+    <table class="table" >
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col" >NbTable</th>
+            <th scope="col" >Order</th>    
+            <th scope="col" id="remove-col">Remove</th>  
+          </tr> 
+       </thead>
+        <tbody>
+          <tr *ngFor="let ord of orderDb;let i=index;">
+            <td class="firstTd"> {{ord.nbTable}}</td>
+            <td class="secondTd">
+              <tr> 
+              <th scope="col">Name</th>
+              <th scope="col" class="price-col">Price</th>
+            </tr>
+            <tr *ngFor ="let food of ord.order">
+              <td class="order" > {{food.name}}</td>
+              <td class="order" class="price-col" #price> {{food.price}} &euro;</td>
+              </tr>
+              <tr> 
+                <td class="order" >Total </td> 
+                <td class="order" class="price-col"> {{getTotal(ord)}} &euro;</td> 
+              </tr>
+              
+              </td>
+              <td class="thirdTd">
+                <tr scope="col"><button mat-raised-button color="warn" (click)="deleteOrder(ord.id)"> Remove </button></tr>
+
+              </td>
+            </tr>
+              
+      
+        </tbody>
+      </table>
+      <button mat-raised-button (click)="backToHome()"> Go back </button>
+      
+     

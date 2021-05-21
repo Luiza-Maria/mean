@@ -1,0 +1,20 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" routerLink="/home">
+        Home
+    </a>  
+    <a class="navbar-brand" routerLink="/menu" *ngIf="isAuth">
+        <i class="icon-food" ></i> 
+
+    </a>
+    <button mat-button *ngIf="isAuth" style="color:white;" routerLink="/get-order">Orders</button>
+    <button #buttonAdd mat-button style="color:white;" (click)="addMenu()" *ngIf="isAuth">Add menu</button>
+    <a class="navbar-brand" routerLink="/login" *ngIf="!isAuth">
+        Login
+    </a>
+    <button mat-button style="color:white;" (click)="logOut()"  *ngIf="isAuth">
+        Logout
+    </button> 
+    <a class="navbar-brand" routerLink="/signup" *ngIf="!isAuth">
+        Sign up
+    </a>   
+ </nav>

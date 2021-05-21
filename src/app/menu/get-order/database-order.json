@@ -1,0 +1,128 @@
+{
+  "order": [
+    {
+      "id": 1,
+      "nbTable": " 1 ",
+      "order": [
+        {
+          "image": [
+            " .\\assets\\food\\carnivore\\ciorbita.jpg"
+          ],
+          "_id": "6036bb241068e80df86a0acd",
+          "name": "ciorbita de vacuta",
+          "price": 12,
+          "info": "carne vaca,  legume",
+          "__v": 0
+        },
+        {
+          "image": [
+            ".\\assets\\food\\carnivore\\cartofi.jpg"
+          ],
+          "_id": "603812b4d159cb094cc31998",
+          "name": "Cartofi frantuzesti",
+          "price": 20,
+          "info": "oua",
+          "__v": 0
+        },
+        {
+          "image": [
+            ".\\assets\\food\\carnivore\\pizza.jpg"
+          ],
+          "_id": "603b8f5e52ab3522b0a97324",
+          "name": "pizza cu branzeturi si salam",
+          "price": 11,
+          "info": "cascaval, mozzarela, gorgonzola, rosii",
+          "__v": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nbTable": " 3 ",
+      "order": [
+        {
+          "image": [
+            " .\\assets\\food\\carnivore\\ciorbita.jpg"
+          ],
+          "_id": "6036bb241068e80df86a0acd",
+          "name": "ciorbita de vacuta",
+          "price": 12,
+          "info": "carne vaca,  legume",
+          "__v": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nbTable": " 2 ",
+      "order": [
+        {
+          "image": [
+            " .\\assets\\food\\carnivore\\ciorbita.jpg"
+          ],
+          "_id": "6036bb241068e80df86a0acd",
+          "name": "ciorbita de vacuta",
+          "price": 12,
+          "info": "carne vaca,  legume",
+          "__v": 0
+        },
+        {
+          "image": [
+            ".\\assets\\food\\carnivore\\cartofi.jpg"
+          ],
+          "_id": "603812b4d159cb094cc31998",
+          "name": "Cartofi frantuzesti",
+          "price": 20,
+          "info": "oua",
+          "__v": 0
+        },
+        {
+          "image": [
+            ".\\assets\\food\\carnivore\\clatite.jpg"
+          ],
+          "_id": "603b8d9852ab3522b0a97322",
+          "name": "Clatite",
+          "price": 4,
+          "info": "faina\noua\nlapte\nfinetti/dulceata",
+          "__v": 0
+        },
+        {
+          "image": [
+            ".\\assets\\food\\carnivore\\pizza.jpg"
+          ],
+          "_id": "603b8f5e52ab3522b0a97324",
+          "name": "pizza cu branzeturi si salam",
+          "price": 11,
+          "info": "cascaval, mozzarela, gorgonzola, rosii",
+          "__v": 0
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nbTable": " 5 ",
+      "order": [
+        {
+          "image": [
+            ".\\assets\\food\\carnivore\\clatite.jpg"
+          ],
+          "_id": "603b8d9852ab3522b0a97322",
+          "name": "Clatite",
+          "price": 4,
+          "info": "faina\noua\nlapte\nfinetti/dulceata",
+          "__v": 0
+        },
+        {
+          "image": [
+            ".\\assets\\food\\carnivore\\pizza.jpg"
+          ],
+          "_id": "603b8f5e52ab3522b0a97324",
+          "name": "pizza cu branzeturi si salam",
+          "price": 11,
+          "info": "cascaval, mozzarela, gorgonzola, rosii",
+          "__v": 0
+        }
+      ]
+    }
+  ]
+}

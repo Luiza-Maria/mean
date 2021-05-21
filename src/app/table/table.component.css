@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #101111;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid lime;;
+  }
+  .grid-item {
+    background-color: rgba(34, 241, 114, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 85px;
+    font-size: 100px;
+    text-align: center;
+  }
+  .red {
+    background: red;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 85px;
+    font-size: 100px;
+    text-align: center;
+    pointer-events: none ;
+  }
+  .green {
+    background-color: rgba(34, 241, 114, 0.8);
+  }
+
+  @media only screen and (max-width: 784px) {
+    .grid-container {
+      padding: 10px;
+    }
+    .grid-item,.red {
+      font-size: 60px;
+      padding: 20px;
+    }
+  }
+    

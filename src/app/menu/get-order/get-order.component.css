@@ -1,0 +1,39 @@
+table {
+    width: auto;
+    font-size: 20px;
+    border: 1px solid rgb(168, 162, 162)
+  }
+  .order {
+    border-right: 1px solid rgb(168, 162, 162);
+    margin-bottom: 10px;
+  }
+
+  .firstTd,th {
+    border-right: 1px solid rgb(126, 120, 120);
+    text-align: center;
+    font-weight: 700;
+    width: 150px;
+  }
+  .secondTd {
+    border-right: 1px solid rgb(126, 120, 120);
+    text-align: center;
+    width: 250px;
+  }
+
+  #remove-col {
+    width: 50px;
+  }
+
+  .price-col {
+    border-right: none;
+  }
+
+  .thirdTd{
+    width: 50px;
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  

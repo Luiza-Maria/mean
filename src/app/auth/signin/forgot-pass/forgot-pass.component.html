@@ -1,0 +1,39 @@
+<!-- input cu emailul
+daca emailul exista in baza de date---trimitem la emailul respectiv un cod----
+sub email input apare inca o casuta in care trebuie sa introducem codul
+daca codul este cirect deschidem alta casuta pt new password
+si facem un put la userul cu emailul respectiv pt a edita parola -->
+
+<form  #loginF="ngForm" (ngSubmit) = "onSubmit(loginF)">
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" name="email" #email="ngModel" ngModel class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
+
+
+<div class="mb-3" *ngIf="!userExists">
+  <label for="exampleInputCode1" class="form-label">Code: </label>
+  <input type="text" name="code" #codeValue>
+  <button (click)="sendCode(codeValue.value)" class="btn btn-primary">Send</button>
+</div> 
+
+
+<!-- //New Password  -->
+<div class="new-pass" *ngIf="codePass">
+<div class="mb-3" >
+  <label for="exampleInputCode" class="form-label">Password: </label>
+  <input type="password" name="pass1" #pass (keyup)="newPass1($event)">
+</div>
+<div class="mb-3" >
+  <label for="exampleInput" class="form-label">Password: </label>
+  <input type="password" name="pass2" #passNew (keyup)="newPass2($event)">
+</div>
+<button [disabled]= "!samePassword" (click)="sendPass(passNew.value)" class="btn btn-primary">Send password</button>
+</div>
+<hr/>
+
+<li *ngFor="let user of users">
+    {{user.email}} --- {{user.password}}
+</li>

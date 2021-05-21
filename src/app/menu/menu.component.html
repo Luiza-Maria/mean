@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  
+ <app-navigation></app-navigation>
+
+ <div class="row">
+   <div class="col-lg-12">
+    <button type="button"  (click) ="prevMenu()" class="btn btn-primary"> < </button> &nbsp; &nbsp; 
+    <button type="button"  (click) ="nextMenu()" class="btn btn-primary"> > </button>
+    </div> 
+ </div> 
+    
+<div class="row menu">
+ <div class="col-lg-6"  *ngFor="let mn of otherMenu">
+      <div class="card" >
+        <img class="card-img-top" src ="{{mn.image[0]}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{mn.name}} 
+            <button  class="update" mat-raised-button color="primary" *ngIf="isAuth" (click)="updateItem(mn)"> Update</button>
+            <button  class="update" mat-raised-button color="warn"  *ngIf="isAuth" (click)="deleteItem(mn._id)">Remove</button>
+            <button  class="update" mat-raised-button  (click)="addItemToOrder(mn)">Add</button>
+          </h5>
+          <p class="card-text">{{ mn.price}}</p>
+          <p class="card-text">{{mn.info}}</p>
+        </div>
+    </div>          
+         </div> 
+       </div> 
+    <div class="send">
+      <button  [disabled]="!orderArr.length" class="sendOrder" mat-raised-button  (click)="sendOrder()">Send order</button>
+    </div> 
+    </div> 
+

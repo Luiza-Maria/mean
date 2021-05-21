@@ -1,0 +1,37 @@
+.container-fluid {
+    background-color: rgb(145, 145, 245);
+    margin:0px;
+    height: 100%;
+    width:100%;
+    text-align: center;
+
+}
+.row{
+    text-align: center;
+}
+.col-2,.col-8 {
+    text-align: center;
+    padding-top:50px;
+
+}
+
+.signup {
+    border: 2px solid rgb(83, 70, 104);
+    border-radius: 5px;
+    padding: 20px;
+}
+h1 {
+    font-weight: 600;
+}
+hr {
+    background-color: rgb(83, 70, 104);
+    color: rgb(83, 70, 104);
+    height:2px;
+    border-width:0;
+}
+
+@media only screen and (orientation: landscape) {
+    .signup {
+        width: auto;
+    }
+  }
