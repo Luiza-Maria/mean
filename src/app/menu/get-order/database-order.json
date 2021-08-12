@@ -99,8 +99,8 @@
       ]
     },
     {
-      "id": 5,
-      "nbTable": " 5 ",
+      "id": 4,
+      "nbTable": " 4 ",
       "order": [
         {
           "image": [
@@ -118,7 +118,7 @@
           ],
           "_id": "603b8f5e52ab3522b0a97324",
           "name": "pizza cu branzeturi si salam",
-          "price": 11,
+          "price": 15,
           "info": "cascaval, mozzarela, gorgonzola, rosii",
           "__v": 0
         }
