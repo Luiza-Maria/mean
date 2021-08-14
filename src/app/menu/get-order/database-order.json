@@ -99,6 +99,52 @@
       ]
     },
     {
+      "id": 5,
+      "nbTable": " 5 ",
+      "order": [
+        {
+          "image": [
+            ".\\assets\\food\\carnivore\\clatite.jpg"
+          ],
+          "_id": "603b8d9852ab3522b0a97322",
+          "name": "Clatite",
+          "price": 4,
+          "info": "faina\noua\nlapte\nfinetti/dulceata",
+          "__v": 0
+        },
+        {
+          "image": [
+            ".\\assets\\food\\carnivore\\pizza.jpg"
+          ],
+          "_id": "603b8f5e52ab3522b0a97324",
+          "name": "pizza cu branzeturi si salam",
+          "price": 15,
+          "info": "cascaval, mozzarela, gorgonzola, rosii",
+          "__v": 0
+        },
+        {
+          "image": [
+            "\\assets\\food\\carnivore\\ciorbita.jpg"
+          ],
+          "_id": "60a6bb3a8725463a001e817a",
+          "name": "ciorbita de porc",
+          "price": 11,
+          "info": "carne, legume",
+          "__v": 0
+        },
+        {
+          "image": [
+            ".\\assets\\food\\carnivore\\sarmale.jpg"
+          ],
+          "_id": "6060d8a60162d02828a2de63",
+          "name": "Sarmale",
+          "price": 5,
+          "info": "orez, varza",
+          "__v": 0
+        }
+      ]
+    },
+    {
       "id": 4,
       "nbTable": " 4 ",
       "order": [
