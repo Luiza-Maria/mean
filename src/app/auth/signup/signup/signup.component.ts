@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthServiceService } from '../../auth-service.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { AuthServiceService } from '../../auth-service.service';
 })
 export class SignupComponent implements OnInit {
 
-  constructor(public authserv:AuthServiceService) { }
+  constructor(public authserv:AuthServiceService, public router: Router) { }
 
   ngOnInit(): void {
   }
@@ -26,6 +27,7 @@ export class SignupComponent implements OnInit {
       console.log(response);
     });
     console.log(signUpF.value);
+
   }
 
 }

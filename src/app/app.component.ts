@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-import { DestinatiiServService } from './destinatii/destinatii-serv.service';
-import { Destinatie } from './destinatii/destinatii.model';
-import {MatToolbarModule} from '@angular/material/toolbar';
 import { AuthServiceService } from './auth/auth-service.service';
-declare var $: any;
 
 @Component({
   selector: 'app-root',
